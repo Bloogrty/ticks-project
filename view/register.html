@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="icon"
+      href="../img/logo-mini.png"
+      type="image/png"
+      sizes="25x25"
+    />
+    <title>Ticks | Register</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img alt="" class="logo" src="../img/logo.png" /></a>
+      <!-- navbar -->
+      <div class="navbar">
+        <ul id="list">
+          <li>
+            <a href="index.html" class="nav-deactive">Home</a>
+          </li>
+          <li><a href="register.html" class="nav-active">Register</a></li>
+          <li class="hide-nav">
+            <a href="ongoing-ticket.html" class="nav-deactive">Ticket</a>
+            <ul>
+              <li><a href="upcoming-ticket.html">Upcoming Tickets</a></li>
+              <li><a href="ongoing-ticket.html">Ongoing Tickets</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="ticket-detail.html" class="nav-deactive">Ticket Detail</a>
+          </li>
+          <li class="hide-nav">
+            <a href="avaiable-promo.html" class="nav-deactive">Promotions</a>
+            <ul>
+              <li><a href="avaiable-promo.html">Available Promos</a></li>
+              <li><a href="upcoming-promo.html">Upcoming Promos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- burger -->
+      <img
+        alt=""
+        class="menu-icon"
+        onclick="toggle()"
+        src="../img/burger.png"
+      />
+      <!-- burger end -->
+    </nav>
+
+    <main class="content-register">
+      <div class="content-register__header">
+        <h3>Join Us!</h3>
+        <h4>Be a part of Ticks Community!</h4>
+      </div>
+      <div class="title">
+        <h1>Register account</h1>
+        <h5>Easy registration!</h5>
+        <!-- end title -->
+      </div>
+      <!-- content -->
+      <form
+        name="register-form"
+        id="register-form"
+        onsubmit="validateForm(event)"
+      >
+        <div class="form">
+          <div class="form-list">
+            <label>Name: </label><br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="field"
+              placeholder="Full name"
+              required
+            /><br />
+            <p class="error" id="error-name"></p>
+          </div>
+          <div class="form-list">
+            <label>Email: </label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="field"
+              placeholder="Email address"
+              required
+            /><br />
+            <p class="error" id="error-email"></p>
+          </div>
+          <div class="form-list">
+            <label>Phone Number: </label><br />
+            <input
+              type="text"
+              name="phone-number"
+              id="phone-number"
+              class="field"
+              placeholder="Phone Number"
+              required
+            /><br />
+            <p class="error" id="error-phone-number"></p>
+          </div>
+          <div class="form-list">
+            <label>Password: </label><br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="field"
+              placeholder="Password"
+              required
+            /><br />
+            <p class="error" id="error-password"></p>
+          </div>
+          <!-- gender -->
+          <div class="form-list">
+            <label for="gender" class="gender"><p>Gender</p></label>
+            <p class="error" id="error-gender"></p>
+            <input type="radio" name="gender" id="male" value="male" />Male
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+            />Female
+          </div>
+          <!-- end gender -->
+          <!-- agrrement -->
+          <div class="agreement">
+            <p class="error" id="error-agree"></p>
+            <input type="checkbox" name="agree" id="agree" required /> I agree
+            to the terms and conditions.
+          </div>
+          <!-- end agreement -->
+          <!-- button register -->
+          <div class="form-list">
+            <button type="submit" id="submit">Register</button>
+          </div>
+          <!-- end button register -->
+        </div>
+      </form>
+      <!-- end form -->
+    </main>
+
+    <footer>
+      <!-- social media -->
+      <div class="socmed">
+        <a href="https://www.instagram.com"
+          ><img src="../img/icon/instagram.png" class="icon-media"
+        /></a>
+        <a href="https://www.facebook.com"
+          ><img src="../img/icon/facebook.png" class="icon-media"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img src="../img/icon/twitter.png" class="icon-media"
+        /></a>
+      </div>
+      <!-- social media end -->
+
+      <!-- copyright -->
+      <div>
+        <p id="copyright">© 2023, TICKS</p>
+      </div>
+      <!-- end copyright -->
+      <!--  download on app -->
+      <div class="download-app">
+        <div>
+          <img src="../img/icon/app-store.png" class="download-icon" />
+        </div>
+        <div>
+          <img src="../img/icon/playstore.png" class="download-icon" />
+        </div>
+      </div>
+      <!-- end download on app -->
+    </footer>
+    <script src="../script/script-media.js"></script>
+    <script src="../script/script-register.js"></script>
+  </body>
+</html>

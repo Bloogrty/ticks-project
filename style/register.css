@@ -1,0 +1,127 @@
+.title{
+    margin: 20px;
+    border-bottom: 3px solid black;
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+.content-register{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    /* background-color: white; */
+}
+
+.field{
+    margin-bottom: 20px;
+    height: 80%;
+    width: 80%;
+    /* background-color: black; */
+}
+
+.gender{
+    width: 0px;
+}
+
+.content-register {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .title h5 {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .form-list {
+    margin-bottom: 10px;
+  }
+
+  .form-list > label{
+    display: flex;
+    margin: auto;
+    align-items: center;
+  }
+
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  
+  .gender {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .agreement {
+    margin-top: 10px;
+  }
+  
+  #submit {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .content-register {
+    background-color: #e6e6e6;
+    margin-top: 24px;
+    border-radius: 16px;
+    
+  }
+  
+  .field:focus {
+    outline: none;
+    box-shadow: 0 0 5px #6c9ce8;
+  }
+  
+  .error {
+    display: none;
+  }

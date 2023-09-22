@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <script defer src="../script/script-media.js"></script>
+    <title>navbar</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img alt="" class="logo" src="../img/logo.png" /></a>
+      <!-- navbar -->
+      <div class="navbar">
+        <ul id="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li class="hide-nav">
+            <a href="ticket.html">Ticket</a>
+            <ul>
+              <li><a href="ticket.html">Upcoming Tickets</a></li>
+              <li><a href="ticket-ongoing.html">Ongoing Tickets</a></li>
+            </ul>
+          </li>
+          <li><a href="ticket-detail.html">Ticket Detail</a></li>
+          <li class="hide-nav">
+            <a href="promotions.html">Promotions</a>
+            <ul>
+              <li><a href="promotions.html">Available Promos</a></li>
+              <li><a href="upcomingpromotions.html">Upcoming Promos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- burger -->
+      <img
+        alt=""
+        class="menu-icon"
+        onclick="toggle()"
+        src="../img/burger.png"
+      />
+      <!-- burger end -->
+    </nav>
+    <script src="../script/script-media.js"></script>
+  </body>
+</html>

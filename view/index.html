@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <script src="../script/carousel.js"></script>
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <link
+      rel="icon"
+      href="../img/logo-mini.png"
+      type="image/png"
+      sizes="25x25"
+    />
+    <title>Ticks | Home</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img alt="" class="logo" src="../img/logo.png" /></a>
+      <!-- navbar -->
+      <div class="navbar">
+        <ul id="list">
+          <li>
+            <a href="index.html" class="nav-active">Home</a>
+          </li>
+          <li><a href="register.html" class="nav-deactive">Register</a></li>
+          <li class="hide-nav">
+            <a href="ongoing-ticket.html" class="nav-deactive">Ticket</a>
+            <ul>
+              <li><a href="upcoming-ticket.html">Upcoming Tickets</a></li>
+              <li><a href="ongoing-ticket.html">Ongoing Tickets</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="ticket-detail.html" class="nav-deactive">Ticket Detail</a>
+          </li>
+          <li class="hide-nav">
+            <a href="avaiable-promo.html" class="nav-deactive">Promotions</a>
+            <ul>
+              <li><a href="avaiable-promo.html">Available Promos</a></li>
+              <li><a href="upcoming-promo.html">Upcoming Promos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- burger -->
+      <img
+        alt=""
+        class="menu-icon"
+        onclick="toggle()"
+        src="../img/burger.png"
+      />
+      <!-- burger end -->
+    </nav>
+
+    <div class="slider-carousel">
+      <div class="carousel-arrow" id="left">
+        <img src="../img/icon/left-arrow.png" alt="" />
+      </div>
+      <div class="carousel">
+        <div class="carousel-image-container">
+          <img
+            src="../img/home-carousel-images/BCA promo.bmp"
+            alt=""
+            class="carousel-image"
+          />
+          <img
+            src="../img/home-carousel-images/Blackpink Concert.bmp"
+            alt=""
+            class="carousel-image"
+          />
+          <img
+            src="../img/home-carousel-images/Script Concert.bmp"
+            alt=""
+            class="carousel-image"
+          />
+        </div>
+      </div>
+      <div class="carousel-arrow" id="right">
+        <img src="../img/icon/right-arrow.png" alt="" />
+      </div>
+    </div>
+
+    <section class="content__home">
+      <h3>What You Can Get on Ticks!</h3>
+      <section class="icon__promo">
+        <div class="icon-promo-content">
+          <img src="../img/icon/affection.png" alt="icon" />
+          <p>Happy</p>
+        </div>
+        <div class="icon-promo-content">
+          <img src="../img/icon/confetti.png" alt="icon" />
+          <p>Party</p>
+        </div>
+        <div class="icon-promo-content">
+          <img src="../img/icon/dancing.png" alt="icon" />
+          <p>Dance</p>
+        </div>
+        <div class="icon-promo-content">
+          <img src="../img/icon/hot-sale.png" alt="icon" />
+          <p>Promo</p>
+        </div>
+        <div class="icon-promo-content">
+          <img src="../img/icon/ticket.png" alt="icon" />
+          <p>Ticket</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="home__ticket-list">
+      <h3>Best Seller</h3>
+      <section class="home-ticket-list-card">
+        <div class="card">
+          <a href="ticket-detail.html">
+            <div class="card-image">
+              <img
+                src="https://s3.amazonaws.com/bit-photos/large/198079.jpeg"
+                class="card-image img-concert"
+              />
+            </div>
+            <div class="category">Ongoing</div>
+            <div class="heading">
+              <p>The Changcuters Goes To Bandung</p>
+              <div class="detail-time">
+                Date: <span class="date font-detail">12 May 2023</span><br />
+                Time: <span class="time font-detail">18:00 ~ 20:00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="ticket-detail.html">
+            <div class="card-image">
+              <img
+                src="https://i.pinimg.com/originals/ce/cd/70/cecd70f86321ea291a7c15a24d7ddf6b.jpg"
+                class="card-image img-concert"
+              />
+            </div>
+            <div class="category">Ongoing</div>
+            <div class="heading">
+              <p>Travis Scott Astro World Tour</p>
+              <div class="detail-time">
+                Date: <span class="date font-detail">5 March 2023</span><br />
+                Time: <span class="time font-detail">17:00 ~ 20:00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </section>
+    <section class="home__ticket-list">
+      <h3>Recommendation</h3>
+
+      <section class="home-ticket-ongoing-card">
+        <div class="card">
+          <a href="ticket-detail.html">
+            <div class="card-image">
+              <img
+                src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/12/06/1151867115.jpg"
+                class="card-image img-concert"
+              />
+            </div>
+            <div class="category">Upcoming</div>
+            <div class="heading">
+              <p>Hindia Rumah ke Rumah Jakarta</p>
+              <div class="detail-time">
+                Date: <span class="date font-detail">22 October 2023</span
+                ><br />
+                Time: <span class="time font-detail">17:00 ~ 20:00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="ticket-detail.html">
+            <div class="card-image">
+              <img
+                src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/11/26/2451193162.jpg"
+                class="card-image img-concert"
+              />
+            </div>
+            <div class="category">Upcoming</div>
+            <div class="heading">
+              <p>Pamungkas To The Bone Konser</p>
+              <div class="detail-time">
+                Date: <span class="date font-detail">20 August 2023</span><br />
+                Time: <span class="time font-detail">12:00 ~ 17:00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <!-- social media -->
+      <div class="socmed">
+        <a href="https://www.instagram.com"
+          ><img src="../img/icon/instagram.png" class="icon-media"
+        /></a>
+        <a href="https://www.facebook.com"
+          ><img src="../img/icon/facebook.png" class="icon-media"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img src="../img/icon/twitter.png" class="icon-media"
+        /></a>
+      </div>
+      <!-- social media end -->
+
+      <!-- copyright -->
+      <div>
+        <p id="copyright">© 2023, TICKS</p>
+      </div>
+      <!-- end copyright -->
+      <!--  download on app -->
+      <div class="download-app">
+        <div>
+          <img src="../img/icon/app-store.png" class="download-icon" />
+        </div>
+        <div>
+          <img src="../img/icon/playstore.png" class="download-icon" />
+        </div>
+      </div>
+      <!-- end download on app -->
+    </footer>
+    <script src="../script/carousel.js"></script>
+    <script src="../script/script-media.js"></script>
+  </body>
+</html>

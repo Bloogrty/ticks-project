@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: var(--color-background);
+    /* font: 400 16px Roboto, sans-serif; */
+}
+
+:root {
+    --color-background: #ffffff;
+    --color-font-default: #333333;
+    --color-font-gray: #5A5B5C;
+    --color-blue: #0055EB;
+    --color-light-blue: #F4F9FF;
+    --color-blue-hover: #C7DBFA;
+
+}

@@ -1,0 +1,203 @@
+.ongoing__header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin: 0 auto;
+    height: 25vh;
+    background-color: var(--color-blue-hover);
+}
+
+.ongoing__header h2{
+     font-size: 48px;
+     color: var(--color-font-default);
+}
+
+.ongoing__header p{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-font-gray);
+}
+
+.ticket-card__container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.ticket-card__container h3 {
+  font-size: 36px;
+  color: var(--color-font-default);
+  margin-top: 24px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 24px;
+    gap: 16px;
+  }
+  
+  .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 190px;
+      height: 274px;
+      background: white;
+      padding: .4em;
+      border-radius: 6px;
+      margin: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .card:last-child {
+      margin-right: auto;
+
+    }
+  
+    .card a{
+      text-decoration: none;
+    }
+  
+    .card-image {
+      /* background-color: wheat; */
+      /* width: 100%; */
+      /* height: 60%; */
+      width: 190px;
+      height: 160px;
+      border-radius: 6px 6px 0 0;
+    }
+  
+    .card-image:hover {
+      transform: scale(0.98);
+    }
+  
+    .img-concert{
+      /* height: 160px; */
+      /* width: auto; */
+      /* border-radius: 6px 6px 0 0; */
+    }
+  
+    .category {
+      text-transform: uppercase;
+      font-size: 0.7em;
+      font-weight: 600;
+      color: blue;
+      padding: 10px 7px 0;
+    }
+  
+    .category:hover {
+      cursor: pointer;
+    }
+  
+    .heading {
+      font-weight: 600;
+      color: rgb(88, 87, 87);
+      padding: 5px;
+    }
+  
+    .heading:hover {
+      cursor: pointer;
+    }
+  
+    .detail-time {
+      color: gray;
+      font-weight: 400;
+      font-size: 11px;
+      padding-top: 10px;
+      /* padding-bottom: 10px;
+      margin-bottom: 10px; */
+    }
+  
+    .font-detail {
+      font-weight: 600;
+    }
+  
+    .font-detail:hover {
+      cursor: pointer;
+    }
+
+.ongoing__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 48px;
+}
+
+.ongoing__content .img img {
+  width: 350px;
+  height: 350px;
+}
+
+.ongoing__content-text {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 60%;
+  
+}
+
+.ongoing__content-text h4 {
+  font-size: 36px;
+  color: var(--color-font-default);
+  margin-bottom: 24px;
+}
+
+.ongoing__content-text h5 {
+  font-size: 24px;
+  color: var(--color-font-gray);
+}
+
+.ongoing__content-text p {
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 800px){
+
+  .ongoing__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 48px;
+  }
+
+  .ongoing__content .img img {
+    width: 200px;
+    height: 200px;
+  }
+  
+
+  .ongoing__header{
+    height: 30vh;
+  }
+
+  .ongoing__header h2{
+    font-size: 36px;
+}
+
+.ongoing__header p{
+   font-size: 16px;
+}
+
+.ongoing__content-text h4 {
+  font-size: 24px;
+}
+
+.ongoing__content-text h5 {
+  font-size: 16px;
+}
+
+.ongoing__content-text p {
+  font-size: 12px;
+}
+}

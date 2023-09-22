@@ -1,0 +1,118 @@
+@import "global.css";
+
+.slider-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.carousel-arrow img{
+    position: relative;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel{
+    margin: 0px 15px;
+    overflow: hidden;
+}
+
+.carousel-image-container{
+    width: 1338px;
+    /* width: 1500px; */
+    height: 595px;
+    position: relative;
+}
+
+.carousel-image{
+    width: 1338px;
+    /* width: 100vw; */
+    height: 595px;
+    float: left;
+    object-fit: cover;
+}
+
+.content__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 48px;
+}
+
+.content__home h3 {
+    font-size: 36px;
+}
+
+.icon__promo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin:  24px auto;
+    height: 25vh;
+    width: 80%;
+}
+
+.icon-promo-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+}
+
+.icon__promo img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.home__ticket-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.home__ticket-list h3 {
+    font-size: 36px;
+}
+
+.home-ticket-list-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-ticket-ongoing-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px){
+    .icon-promo-content img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .home-ticket-list-card {
+        flex-direction: column;
+    }
+
+    .home-ticket-ongoing-card {
+        flex-direction: column;
+    }
+}
